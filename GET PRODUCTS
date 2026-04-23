@@ -1,0 +1,4 @@
+app.get("/products", (req, res) => {
+  const db = loadDB();
+  res.json(db.products);
+});
