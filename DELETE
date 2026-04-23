@@ -1,9 +1,0 @@
-app.delete("/admin/product/:id", auth, (req, res) => {
-  const db = loadDB();
-
-  db.products = db.products.filter(p => p.id != req.params.id);
-
-  saveDB(db);
-
-  res.json({ success: true });
-});
