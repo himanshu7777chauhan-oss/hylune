@@ -1,3 +1,0 @@
-app.listen(PORT, () => {
-  console.log(`Hylune running on port ${PORT}`);
-});
